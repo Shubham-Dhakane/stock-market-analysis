@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+/* Header Styling */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logo .highlight {
+  color: #0070f3; /* Blue accent */
+}
+/* Navigation */
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #0070f3;
+}
+
+/* Search and Profile */
+.search-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  position: relative;
+}
+.search-box input {
+  padding: 8px 35px 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #888;
+}
+.profile-icon {
+  font-size: 20px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search-box input {
+    width: 120px;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.hero-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+/* Stock Search Section */
+.stock-search {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.stock-search h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.stock-search input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.stock-search button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#chartContainer {
+  max-width: 800px;
+  margin: 40px auto 0;
+}
